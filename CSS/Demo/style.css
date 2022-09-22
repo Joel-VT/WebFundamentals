@@ -1,0 +1,38 @@
+body{
+    background-color: cornflowerblue;
+}
+h1{
+    background-color: darkred;
+    color: darksalmon;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+div{
+    border-right: 8px groove rgb(100,100,100);
+    border-left: 8px groove rgb(200,200,200);
+}
+p{
+    background-color: aliceblue;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+}
+ul{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 30px;
+    font-style: oblique;
+}
+.color{
+    background-color: greenyellow;
+    color: black;
+    line-height: 30px;
+    text-align: left;
+}
+[href]{
+    color: rgb(226, 43, 43);
+}
+/* {
+    outline: solid red;
+}

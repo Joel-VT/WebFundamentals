@@ -1,0 +1,21 @@
+.container {
+    height: 1000px;
+    width: 1060px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+}
+.col, .col2, .col3 {
+    padding: 10px;
+    background-color: bisque;
+    color: rebeccapurple;
+    overflow: auto;
+    flex: 1;
+    font-size: 1.2rem;
+    font-family: fantasy;
+    line-height: 90px;
+}
+.col2, .col3 {
+    flex: 2;
+}

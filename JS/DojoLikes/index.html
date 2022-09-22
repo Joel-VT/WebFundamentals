@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header white background-black">
+        <h1 class="normal">Network</h1>
+    </div>
+
+    <!-- Title -->
+
+    <h1 class="title normal">Your Feed</h1>
+
+    <!-- Main Content -->
+
+    <main class="flex">
+
+        <!-- Left Column -->
+
+        <div class="left border flex flex-column align-center">
+            <img src="user-circle.png" alt="user circle">
+            <a href="">Add an avatar</a>
+            <h2 class="normal">James Doe</h2>
+        </div>
+
+        <!-- Right Column -->
+
+        <div class="right flex-2">
+            <div class="box border">
+                <header class="flex justify-between align-center">
+                    <h3 class="normal">Neil M</h3>
+                    <div class="likes flex align-center">
+                        <p><span id="val1">9</span> Like(s)</p>
+                        <button class="border shadow" onclick="addlikes('val1')">Like</button>
+                    </div>
+                </header>
+                <p>I just set up this new discord bot, let me know what you think. <a href="">link</a></p>
+            </div>
+            <div class="box border">
+                <header class="flex justify-between align-center">
+                    <h3 class="normal">Nichole K</h3>
+                    <div class="likes flex align-center">
+                        <p><span id="val2">12</span> Like(s)</p>
+                        <button class="border shadow" onclick="addlikes('val2')">Like</button>
+                    </div>
+                </header>
+                <p>Just finished my <a href="">next comic</a>, check it out.</p>
+            </div>
+            <div class="box border">
+                <header class="flex justify-between align-center">
+                    <h3 class="normal">Jim R</h3>
+                    <div class="likes flex align-center">
+                        <p><span id="val3">9</span> Like(s)</p>
+                        <button class="border shadow" onclick="addlikes('val3')">Like</button>
+                    </div>
+                </header>
+                <p>I can't stop listening to the <a href="">new album</a>. Who else is liking it?</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <!-- Nav bar -->
+        
+        <div class="nav">
+            <h1>Dojonary</h1>
+            <input class="border" type="text" placeholder="Search">
+            <button class="border" onclick="changetext(this)">Login</button>
+        </div>
+        
+        <!-- Main Content -->
+
+        <div class="content">
+
+            <!-- Left Column -->
+
+            <div class="left">
+
+                <!-- Top Box -->
+
+                <div class="box border">
+                    <div class="sub-left">
+                        <h1>ninja</h1>
+                        <h4>noun</h4>
+                        <p>Plural: <span>ninjas</span></p>
+                        <button class="border" onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <p>A practitioner skilled in the<br><a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+
+                <!-- Bottom Box -->
+
+                <div class="box border">
+                    <div class="sub-left">
+                        <h1>ninja</h1>
+                        <h4>noun</h4>
+                        <p>Plural: <span>ninjas</span></p>
+                        <button class="border" onclick="alert('Ninja was liked')">37 likes</button>
+                    </div>
+                    <p>A <a href="#">programmer</a> who breaks<br>down problems with <a href="#">zen</a>-like<br>focus</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+
+            <div class="right">
+                <div class="right-box border">
+                    <p>Dojonary is<br>defined by <span id="bold-text">YOU</span></p>
+                    <button class="border" onclick="hide(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

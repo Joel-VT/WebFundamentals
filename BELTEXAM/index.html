@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Sports News Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Score Header -->
+    <div class="live-score flex justify-between align-center back-white">
+        <h3>Live Scores</h3>
+        <div>
+            <p>SJC Ninjas - 314</p>
+            <p>NS Pirates - 159</p>
+        </div>
+        <div>
+            <p>SJC Ninjas - 314</p>
+            <p>NS Pirates - 159</p>
+        </div>
+        <div>
+            <p>SJC Ninjas - 314</p>
+            <p>NS Pirates - 159</p>
+        </div>
+        <div>
+            <p>SJC Ninjas - 314</p>
+            <p>NS Pirates - 159</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <header class="flex align-center justify-between back-black">
+        <div class="hleft flex align-center">
+            <h1 class="DSNN white back-red">DSNN</h1>
+            <h3 class="white normal cursor">Football</h3>
+            <h3 class="white normal cursor">Basketball</h3>
+            <h3 class="white normal cursor">Baseball</h3>
+            <h3 class="white normal cursor">Soccer</h3>
+            <h3 class="white normal cursor">More...</h3>
+        </div>
+        <div class="hright">
+            <img src="search-light.png" alt="search icon" class="cursor">
+            <img src="hamburger-light.png" alt="menu icon" class="cursor">
+            <img src="user-circle-light.png" alt="profile icon" class="cursor">
+        </div>
+    </header>
+
+    <!-- main content -->
+
+    <main class="flex justify-center">
+
+        <!-- Left Column -->
+
+        <div class="left">
+
+            <!-- Top Stories -->
+
+            <div class="box back-white radius">
+                <h3>Top Stories</h3>
+                <p class="cursor">Ninjas up big in 5th</p>
+                <p class="cursor">Best sports cities</p>
+                <p class="cursor">Choi joins Hall of Fame</p>
+                <p class="cursor">Tournament underway</p>
+                <p class="cursor">Samurai at Wizards...</p>
+            </div>
+
+            <!-- Sign Up Box -->
+
+            <div class="box back-white radius">
+                <p>Customize your DSNN</p>
+                <div class="flex justify-between">
+                    <button class="button shadow border white back-blue cursor">Sign In</button>
+                    <button class="button shadow border back-white cursor">Sign Up</button>
+                </div>
+            </div>
+
+            <!-- Subscribe -->
+
+            <div class="box back-white radius" id="subscribe">
+                <p>Never miss a play</p>
+                <button class="sub-button shadow border cursor" onclick="removesub('subscribe')">Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        
+        <div class="right back-white radius">
+            <div class="title flex align-center">
+                <div class="red-dot"></div>
+                <h1 class="normal"><span>Live</span> Ninjas leading Pirates</h1>
+            </div>
+
+            <!-- match details -->
+
+            <div class="match flex justify-around">
+                <div class="team flex flex-column align-center">
+                    <img src="sjc-ninjas.png" alt="ninjas logo">
+                    <h5>San Jose</h5>
+                    <h1>Ninjas</h1>
+                    <p>(10W - 3L)</p>
+                    <h1 class="score cursor" id="val1" onclick="add1('val1')">314</h1>
+                </div>
+                <div class="vs flex flex-column align-center">
+                    <h1 class="normal">VS</h1>
+                    <p>0:13 remaining</p>
+                    <p>5th period</p>
+                </div>
+                <div class="team flex flex-column align-center">
+                    <img src="ns-pirates.png" alt="pirates logo">
+                    <h5>Nova Scotia</h5>
+                    <h1>Pirates</h1>
+                    <p>(12W - 2L)</p>
+                    <h1 class="score cursor" id="val2" onclick="add1('val2')">160</h1>
+                </div>
+            </div>
+
+            <p class="footer">
+                A conservative match between the two top-performing
+                sides in the Central League Division with a number 1 seed at stake... <a href="" class="blue">get live updates</a>
+            </p>
+
+        </div>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

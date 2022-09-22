@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/process" method="post">
+        <h1>Registration Form</h1>
+        
+        <label>First Name: *</label>
+        <input type="text" name="first_name"><br>
+
+        <label>Last Name: *</label>
+        <input type="text" name="last_name"><br>
+
+        <label>Email Address: *</label>
+        <input type="text" name="email_address"><br>
+    
+        <label>Password: *</label>
+        <input type="text" name="password"><br>
+    
+        <label>Confirm Password: *</label>
+        <input type="text" name="confirm_password"><br>
+    
+        <label>Birthday: </label>
+        <input type="date" name="dob"><br>
+
+        <label>Gender Identity:</label>
+        <div>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="nonbinary" id="nonbinary">
+            <label for="nonbinary">Non-binary</label>
+            <input type="radio" name="gender" value="iprefernot" id="iprefernot">
+            <label for="iprefernot">I prefer not to answer</label>
+        </div>
+        
+        <label>A short description about myself:</label><br>
+        <textarea name="description" cols="40" rows="5"></textarea>
+        
+        <div>
+            <label>Favorite Language: </label>
+            <select name="languages">
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>C#</option>
+                <option>C++</option>
+            </select>
+        </div>
+        
+        <input type="checkbox" name="updates" id="updates" checked>
+        <label for="updates">Yes, I would like to receive periodic email updates</label><br>
+        
+        <input type="submit" value="Create Account">
+        <p>* indicates a required field</p>
+    </form>
+</body>
+</html>

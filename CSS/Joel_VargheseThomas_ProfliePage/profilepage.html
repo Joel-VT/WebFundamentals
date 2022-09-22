@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <h1>Profile</h1>
+            <ul class="inner-left">
+                <li><a href="">Home</a></li>
+                <li class="bold"><a href="">My Profile</a></li>
+                <li><a href="">Find Connections</a></li>
+            </ul>
+        </div>
+        <button class="bold">Sign Out</button>
+    </div>
+    <main>
+
+
+        <div class="column-left">
+
+
+            <div class="container">
+                <div class="content">
+                    <img src="user-circle.png" alt="Profile icon">
+                    <h1 class="black" id="name">Jane Doe</h1>
+                    <div class="location">
+                        <img src="map-marker.png" alt="Location Logo">
+                        <p class="black">Seattle</p>
+                    </div>
+                    <p class="black">Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!
+                    </p>
+                    <div class="location">
+                        <img src="gear.png" alt="Gear Logo">
+                        <a href="#" onclick="changename('name')">edit profile</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box" id="two">
+                <div class="header">
+                    <h3>Education</h3>
+                </div>
+                <div class="sub">
+                    <h2 class="black">Coding Dojo - Full Stack Bootcamp</h2>
+                    <h4>December 2019 - March 2020</h4>
+                    <p class="black">Triple black belt in Python, MERN, and C#............................................</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column-right">
+
+
+            <div class="box">
+                <div class="header">
+                    <p class="black" id="request">2</p>
+                    <h3>Connection Requests</h3>
+                </div>
+                <div class="sub">
+                    <div class="sub-values" id="subval1">
+                        <div class="names">
+                            <img src="user-circle.png" alt="user-circle">
+                            <h3>Todd E</h3>
+                        </div>
+                        <div class="tick">
+                            <button onclick="reducecount('request','number','subval1')">✓</button>
+                            <button onclick="reducecount('request','subval1')">X</button>
+                        </div>
+                    </div>
+                    <div class="sub-values" id="subval2">
+                        <div class="names">
+                            <img src="user-circle.png" alt="user-circle">
+                            <h3>Phil K</h3>
+                        </div>
+                        <div class="tick">
+                            <button onclick="reducecount('request','number','subval2')">✓</button>
+                            <button onclick="reducecount('request','subval2')">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box" id="two">
+                <div class="header">
+                    <p class="black"><span class="black" id="number">500</span>+</p>
+                    <h3>Your Connections</h3>
+                </div>
+                <div class="sub">
+                    <div class="sub-values">
+                        <div class="names">
+                            <img src="user-circle.png" alt="user-circle">
+                            <h3>Adrien D</h3>
+                        </div>
+                    </div>
+                    <div class="sub-values">
+                        <div class="names">
+                            <img src="user-circle.png" alt="user-circle">
+                            <h3>Anne J</h3>
+                        </div>
+                    </div>
+                    <div class="sub-values">
+                        <div class="names">
+                            <img src="user-circle.png" alt="user-circle">
+                            <h3>Alayne T</h3>
+                        </div>
+                    </div>
+                    <div class="sub-values">
+                        <div class="names">
+                            <img src="user-circle.png" alt="user-circle">
+                            <h3>Arry Y</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-bar">
+                    <a href="">View More</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
